@@ -1,0 +1,98 @@
+body {
+  color: $base-text-colour;
+  background: $body-bg;
+  font: $base-font-weight $base-font-size $base-font-family;
+}
+
+a {
+  color: $logo-colour;
+  text-decoration: none;
+}
+.title,.logo { font-family: $title-font-family }
+
+/* uniform padding */
+article, footer { padding: 4vmin 2rem; }
+footer{
+}
+
+section {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+footer{
+  display: flex;
+  text-align:center;
+  flex-wrap: wrap;
+  padding-top: 0;
+}
+footer .title{
+  flex: 0 0 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* header */
+header {
+  padding: 6vmin 2rem;
+  background: $header-base;
+  background: $header-gradient;
+}
+.logo, .sublogo {
+  color: #fff;
+  text-align: center;
+}
+.logo {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.sublogo{
+  margin: -1.75em 0 .75rem;
+  letter-spacing: 2px;
+}
+
+
+/* blog */
+article h3 {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: .2em;
+}
+article h3 span {
+  display:block;
+  color: $meta-colour;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+article h3 span a, article .more {
+  color: $base-link-hover-colour;
+  display: inline-block;
+}
+
+article h3 span a:hover { color: $logo-colour; }
+article p { line-height: 1.5rem; }
+article .more { font-style: italic; }
+article:nth-child(odd) { background: $article-bg-odd; }
+
+/* page and blog */
+article, main {
+  background: $logo-colour;
+  padding: 4vmin 2rem;
+}
+article a, main a { color: $base-link-colour }
+article a:hover, main a:hover { color: $base-link-hover-colour }
+
+/* footer */
+footer .title {
+  color: $logo-colour;
+  font-size: 3rem;
+  letter-spacing: .5rem;
+}
+
+footer .copyleft{
+  margin:0;
+  flex: 0 0 100%;
+}
